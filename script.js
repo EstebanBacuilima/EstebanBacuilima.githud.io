@@ -131,10 +131,21 @@ let trans = () => {
     }, 1000)
 }
 
-// FLOTANTE
-$('.botonF1').hover(function(){
-    $('.btn').addClass('animacionVer');
+
+
+// IR INICIO
+document.querySelector('.go-top-contenido').addEventListener('click',()=>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   })
-  $('.contenedor').mouseleave(function(){
-    $('.btn').removeClass('animacionVer');
-  })
+})
+
+window.onscroll = function(){
+  console.log(document.documentElement.scrollTop )
+  if (document.documentElement.scrollTop > 1000) {
+    document.querySelector('.go-top-contenido').classList.add('show')
+  }else{
+    document.querySelector('.go-top-contenido').classList.remove('show')
+  }
+}
