@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <title>ED Desarrollador Web</title>
+    <!-- ANIMACIONES -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+	<a href="https://wa.link/6ffvwu" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>	
+    </a>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> EDBP</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)"><i class="fa-solid fa-house"></i>INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)"><i class="fa-solid fa-user"></i>SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)"><i class="fa-solid fa-star"></i>HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)"><i class="fa-solid fa-book"></i>PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
+                            <li>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars icono"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.facebook.com/profile.php?id=100006914448012"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/PocoPC07"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.linkedin.com/in/david-bacuilima-bb3a06256/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Mi Portafolio Desarrollador de Software</h2>
+                <p class="descripcion">Más que un deasrrollador </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBREMI -->
+    <section id="sobremi">
+        <div class="contenedor-foto" data-aos="fade-up"
+        data-aos-duration="1000">
+            <img src="img/fotoIm.jpg" alt="">
+        </div>
+        <div class="sobremi" >
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Esteban Bacuilima</span> </h2>
+            <h3>Desarrollador de Software</h3>
+            <p>Soy un desarrollador de software altamente capacitado en el diseño, instalación, pruebas y mantenimiento de sistemas en múltiples plataformas y lenguajes. Me apasiona mantenerme actualizado con las herramientas y procedimientos más innovadores para adaptarme a entornos en constante evolución. Tengo habilidades de autogestión y colaboración, lo que me permite trabajar en proyectos complejos con equipos multidisciplinarios y aportar soluciones innovadoras y efectivas. Soy proactivo, orientado a resultados y siempre busco mejorar mis habilidades y conocimientos para agregar mayor valor a la empresa y al equipo.</p>
+            <a href="archivos/CV Esteban David Bacuilima Perez.pdf" download data-aos="fade-right">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:flex lg:items-center">
+                <div class="w-full space-y-12 lg:w-1/2 ">
+                    <div>
+                        <h1 class="title text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Habilidades<br> en progrmación</h1>
+    
+                        <div class="mt-2">
+                            <span class="linea inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                            <span class="linea inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                            <span class="linea inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                        </div>
+                    </div>
+    
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="title text-xl font-semibold text-gray-700 capitalize dark:text-white">Desarrollador Web</h1>
+    
+                            <p class=" mt-3 text-gray-500 dark:text-gray-300">
+                                Creación de sitios web y aplicaciones web utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como React y Angular. Usando bibliotecas como PrimeNG,Tailwindm, Boostrap y Materialize </p>
+                        </div>
+                    </div>
+    
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="title text-xl font-semibold text-gray-700 capitalize dark:text-white">Manejo de bases de datos</h1>
+    
+                            <p class=" mt-3 text-gray-500 dark:text-gray-300">
+                                Diseño, creación y mantenimiento de bases de datos utilizando herramientas como Oracle, SQLServer, MySQL, MongoDB y PostgreSQL.</p>
+                        </div>
+                    </div>
+    
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="title text-xl font-semibold text-gray-700 capitalize dark:text-white">Computación en la nube</h1>
+    
+                            <p class=" mt-3 text-gray-500 dark:text-gray-300">
+                                Creación, configuración y mantenimiento de infraestructuras en la nube utilizando plataformas como Amazon Web Services (AWS), Digital Ocean, CPanel y Google Cloud Platform.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                    <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="https://static.vecteezy.com/system/resources/previews/002/214/642/original/web-designer-and-programmer-free-vector.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>SKILLS </h3>
+        <div class="skill" >
+            <div class="info">
+                <p><i class="fa-brands fa-html5" style="padding-right: 5px;"></i>Html & Css/Saas</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill"  >
+            <div class="info">
+                <p><i class="fa-brands fa-java" style="padding-right: 5px;"></i>Java</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso5" id="ja"></div>
+            </div>
+        </div>
+        <div class="skill" >
+            <div class="info">
+                <p><i class="fa-brands fa-js" style="padding-right: 5px;"></i>Javascript & Tyscript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill"  >
+            <div class="info">
+                <p><i class="fa-solid fa-database" style="padding-right: 5px;"></i>Bases de Datos SQL/NoSQL</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+
+        <div class="skill" >
+            <div class="info">
+                <p><i class="fa-solid fa-mobile-screen-button" style="padding-right: 5px;"></i>Aplicaciones Móviles</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+
+        <div class="skill" >
+            <div class="info">
+                <p><i class="fa-brands fa-angular" style="padding-right: 5px;"></i>Angular & React<i class="fa-brands fa-react" style="margin-left: 5px;"></i></p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso5" id="ba"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoUno.png" alt="">
+                <div class="info">
+                    <h4>Aplicacion de Escritorio</h4>
+                    <p>Sistema de ventas</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoDos.png" alt="">
+                <div class="info">
+                    <h4>Aplicacion de Escritorio</h4>
+                    <p>Sistema de veterinario</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoTres.png" alt="">
+                <div class="info">
+                    <h4>Sistema web</h4>
+                    <p>Sistema de Adopción de Mascotas</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoCuatro.jpeg" alt="">
+                <div class="info">
+                    <h4>Consumo de api con React</h4>
+                    <p>Api users</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img class="img2" src="img/proyectoCincoPt2.png" alt="">
+                <div class="info">
+                    <h4>Consumo de api con React</h4>
+                    <p>Rick and Morty</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoSiesF.jpeg" alt="">
+                <div class="info">
+                    <h4>Sistema web relizado colaborativamente, uso de java y angular</h4>
+                    <p>Sistema De Cursos y Capacitaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION CONTACTOS -->
+    <section id="contacto" data-aos="fade-up" >
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form id="form" action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="emailjs_name" id="emailjs_name" required>
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="emailjs_email" id="emailjs_email" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="emailjs_tema" id="emailjs_tema" required>
+                </div>
+                <div class="fila">
+                    <textarea name="emailjs_mensaje" id="emailjs_mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" id="button-send" class="btn-enviar">
+            </form>
+        </div>
+        <p id="msg" class="msg " ></p>
+        
+    </section>
+
+    
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100006914448012"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/PocoPC07"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/david-bacuilima-bb3a06256/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- FUNCIONES -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('kd-hahbwvyxZ3Ryze')
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
