@@ -27,11 +27,13 @@
             --color-hover-btn: #0575E6;
             --fondo-inicio: linear-gradient(rgb(0, 99, 238), rgba(255, 255, 255, 0.992));
             --fondo-skills: linear-gradient(to bottom, #0575e6, #021b79);
+            --color-context: #000000;
         }
 
         html[data-theme='dark'] {
             --color-header: #000;
             --color-fondo: #000000;
+            --color-context: #ffffff;
             --color-text: #5FCDD9;
             --color-text-2: #5FCDD9;
             --color-text-3: #ffffff;
@@ -51,6 +53,9 @@
             background-color: var(--color-fondo)
         }
 
+        .context{
+            color: var(--color-context);
+        }
         /* *********************/
         /* seccion INICIO */
         /* *********************/
@@ -444,7 +449,7 @@
         #portfolio .fila .proyecto img {
             width: 100%;
             height: 100%;
-            filter: grayscale(1);
+            /* filter: grayscale(1); */
             object-fit: cover;
             transition: .5s;
         }
