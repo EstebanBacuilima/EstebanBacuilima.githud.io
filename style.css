@@ -27,7 +27,7 @@
             --color-hover-btn: #0575E6;
             --fondo-inicio: linear-gradient(rgb(0, 99, 238), rgba(255, 255, 255, 0.992));
             --fondo-skills: linear-gradient(to bottom, #0575e6, #021b79);
-            --color-context: #000000;
+            --color-context: #ffffff;
         }
 
         html[data-theme='dark'] {
